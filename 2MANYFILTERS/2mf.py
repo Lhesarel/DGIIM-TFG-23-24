@@ -10,7 +10,11 @@ import numpy as np
 
 import tkinter as tk
 from tkinter import messagebox
+<<<<<<< HEAD
 from PIL import Image,ImageTk
+=======
+from PIL import Image, ImageTk
+>>>>>>> 43d368c982914c90de4142e436173cdb42a3ef68
 
 # --------------------------Inputs--------------------------
 AUDIO_FILE = 'name'                                                  # Audio file's name
@@ -187,11 +191,17 @@ def main():
     root.title('2MF')
     
     root.geometry(WDIMENSIONS) # Set fixed size for the window
+<<<<<<< HEAD
     root.resizable(False,False)
     
     icon = ImageTk.PhotoImage(file=resource_path('icon.ico'))   
     root.tk.call('wm','iconphoto',root._w,icon) # Program's icon
 
+=======
+    root.resizable(False, False)
+    
+    root.iconbitmap(resource_path('icon.ico')) # Program's icon
+>>>>>>> 43d368c982914c90de4142e436173cdb42a3ef68
     root.config(bg='black')
     
     title_frame = tk.Frame(root,bg='black') # Container for a title
