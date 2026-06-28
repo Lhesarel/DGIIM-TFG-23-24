@@ -117,7 +117,7 @@ DGIIM-TFG-23-24/
 ├── LICENSE
 ├── requirements.txt
 ├── .gitignore
-├── libro.pdf                     # full thesis (Spanish)
+├── TFG-JavierGranadosLopez-23-24.pdf                     # full thesis (Spanish)
 ├── WAV2MIDICONVERTER/
 │   ├── w2mc.py                   # WAV → score (Tkinter GUI)
 │   ├── precision.py              # per-window accuracy evaluation
