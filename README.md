@@ -117,7 +117,7 @@ DGIIM-TFG-23-24/
 ├── LICENSE
 ├── requirements.txt
 ├── .gitignore
-├── TFG-JavierGranadosLopez-23-24.pdf                     # full thesis (Spanish)
+├── TFG-JavierGranadosLopez-23-24.pdf   # full thesis (Spanish)
 ├── WAV2MIDICONVERTER/
 │   ├── w2mc.py                   # WAV → score (Tkinter GUI)
 │   ├── precision.py              # per-window accuracy evaluation
@@ -159,6 +159,29 @@ cd 2MANYFILTERS && python 2mf.py
 ```
 
 *Prefer not to install anything? Use the [live demos](#-live-demos-no-install) above.*
+
+---
+
+## Building standalone executables (optional)
+
+Both tools can be packaged as single-file executables with [PyInstaller](https://pyinstaller.org/)
+(`pip install pyinstaller`). Run the command **inside the corresponding project folder**. The examples
+below use the Linux/macOS data separator `:`; **on Windows replace it with `;`**.
+
+**WAV2MIDICONVERTER** (`WAV2MIDICONVERTER/`):
+```bash
+pyinstaller --onefile --windowed --add-data "clef.png:." --add-data "icon.ico:." --hidden-import "PIL._tkinter_finder" w2mc.py
+```
+On Linux you may also need to bundle the music21 data: append `--add-binary "<path-to-music21>:."`.
+
+**2MANYFILTERS** (`2MANYFILTERS/`):
+```bash
+pyinstaller --onefile --windowed --add-data "filter.png:." --add-data "icon.ico:." --hidden-import "PIL._tkinter_finder" 2mf.py
+```
+
+> Freshly built PyInstaller binaries are sometimes flagged as false positives by antivirus engines
+> (e.g. Windows Defender). The compiled `.exe` are intentionally **not** committed to this repository
+> (they are large and AV-flagged) — build them locally, or publish them as a GitHub Release if needed.
 
 ---
 
