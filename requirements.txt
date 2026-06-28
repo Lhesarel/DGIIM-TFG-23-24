@@ -1,0 +1,12 @@
+# Core dependencies for the TFG scripts and notebooks.
+# tkinter ships with the standard Python distribution (no pip install needed).
+# PDF export in WAV2MIDIConverter additionally requires MuseScore 4 installed
+# and configured as music21's MusicXML backend.
+numpy
+scipy
+scikit-learn
+pandas
+music21
+pillow
+matplotlib
+jupyter

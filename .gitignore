@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+
+# Prebuilt executables (large binaries; AV may flag them — distribute via Releases instead)
+*.exe
+
+# Generated audio/score outputs
+filtered.wav
+*LPF.wav
+*HPF.wav
+*BPF.wav
+*BSF.wav
+
+# OS
+.DS_Store
+Thumbs.db
