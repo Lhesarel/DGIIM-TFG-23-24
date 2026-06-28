@@ -19,7 +19,7 @@
 **Thesis:** *"Análisis de Fourier y aplicación práctica en el tratamiento de señales de audio"* ·
 Double Degree in Computer Engineering & Mathematics, University of Granada (2023–2024) ·
 Advisors: José Luis Gómez Ruiz (Mathematical Analysis) and Diego Salas González (Signal Theory).
-The full thesis is included as [`libro.pdf`](libro.pdf).
+The full thesis is included as [`TFG-JavierGranadosLopez-23-24.pdf`](TFG-JavierGranadosLopez-23-24.pdf).
 
 ---
 
